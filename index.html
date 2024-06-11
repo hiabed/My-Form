@@ -11,9 +11,9 @@
     <p id="description">Please fill out the form</p>
     <form id="survey-form" method="post">
         <fieldset>
-            <label for="name" id="name-label"><input type="text" id="name" placeholder="Enter your name" required></label>
-            <label for="email" id="email-label"><input type="email" id="email" placeholder="Enter your email" required></label>
-            <label for="number" id="number-label"><input type="number" min="13" max="100" id="number" placeholder="Enter your age" required></label>
+            <label for="name" id="name-label">Enter your Name <input type="text" id="name" placeholder="Enter your name" required></label>
+            <label for="email" id="email-label">Enter your Email <input type="email" id="email" placeholder="Enter your email" required></label>
+            <label for="number" id="number-label">Enter your Age <input type="number" min="13" max="100" id="number" placeholder="Age" required></label>
         </fieldset>
         <fieldset>
             <label for="dropdown">
@@ -26,9 +26,9 @@
             </label>
             <label for="">
                 <p>what is your grade level</p>
-                <input type="radio" name="grade-level" checked> passable
-                <input type="radio" name="grade-level"> bien
-                <input type="radio" name="grade-level"> tres bien
+                <input type="radio" name="grade-level" value="passable" checked> passable
+                <input type="radio" name="grade-level" value="bien"> bien
+                <input type="radio" name="grade-level" value="tres bien"> tres bien
             </label>
             <label for="interests" required>
                 <input type="checkbox" value="Mathematique" id="interests">Mathematique
@@ -42,7 +42,7 @@
                 <textarea id="description" placeholder="Describe yourself..." rows="3" cols="30" required></textarea>
             </label>
         </fieldset>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" id="submit">
     </form>
 </body>
 </html>
