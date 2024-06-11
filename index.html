@@ -11,13 +11,14 @@
     <p id="description">Please fill out the form</p>
     <form id="survey-form" method="post">
         <fieldset>
-            <label for="name" id="name-label"><input type="text" id="name" placeholder="Enter your name"></label>
-            <label for="email" id="email-label"><input type="email" id="email" placeholder="Enter your email"></label>
-            <label for="number" id="number-label"><input type="number" min="13" max="100" id="number" placeholder="Enter your age"></label>
+            <label for="name" id="name-label"><input type="text" id="name" placeholder="Enter your name" required></label>
+            <label for="email" id="email-label"><input type="email" id="email" placeholder="Enter your email" required></label>
+            <label for="number" id="number-label"><input type="number" min="13" max="100" id="number" placeholder="Enter your age" required></label>
         </fieldset>
         <fieldset>
-            <label for="specialisation">
-                <select id="specialisation">
+            <label for="dropdown">
+                <select id="dropdown" required>
+                    <option value="Choose...">Select an option</option>
                     <option value="Informatique">Informatique</option>
                     <option value="Economie">Economie</option>
                     <option value="Sciences-Math">Sciences-Math</option>
@@ -29,14 +30,19 @@
                 <input type="radio" name="grade-level"> bien
                 <input type="radio" name="grade-level"> tres bien
             </label>
-            <label for="interests">
+            <label for="interests" required>
                 <input type="checkbox" value="Mathematique" id="interests">Mathematique
                 <input type="checkbox" value="Programmation" id="interests">Programmation
                 <input type="checkbox" value="Physique" id="interests">Physique
                 <input type="checkbox" value="Statistique" id="interests">Statistique
                 <input type="checkbox" value="Comptabilite" id="interests">Comptabilite
             </label>
+            <p>Describe yourself:</p>
+            <label for="description">
+                <textarea id="description" placeholder="Describe yourself..." rows="3" cols="30" required></textarea>
+            </label>
         </fieldset>
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
