@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY FORM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">High Quality school</h1>
+    <p id="description">Please fill out the form</p>
+    <form id="survey-form" method="post">
+        <fieldset>
+            <label for="name" id="name-label"><input type="text" id="name" placeholder="Enter your name"></label>
+            <label for="email" id="email-label"><input type="email" id="email" placeholder="Enter your email"></label>
+            <label for="number" id="number-label"><input type="number" min="13" max="100" id="number" placeholder="Enter your age"></label>
+        </fieldset>
+        <fieldset>
+            <label for="specialisation">
+                <select id="specialisation">
+                    <option value="Informatique">Informatique</option>
+                    <option value="Economie">Economie</option>
+                    <option value="Sciences-Math">Sciences-Math</option>
+                </select>
+            </label>
+            <label for="">
+                <p>what is your grade level</p>
+                <input type="radio" name="grade-level" checked> passable
+                <input type="radio" name="grade-level"> bien
+                <input type="radio" name="grade-level"> tres bien
+            </label>
+            <label for="interests">
+                <input type="checkbox" value="Mathematique" id="interests">Mathematique
+                <input type="checkbox" value="Programmation" id="interests">Programmation
+                <input type="checkbox" value="Physique" id="interests">Physique
+                <input type="checkbox" value="Statistique" id="interests">Statistique
+                <input type="checkbox" value="Comptabilite" id="interests">Comptabilite
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>
